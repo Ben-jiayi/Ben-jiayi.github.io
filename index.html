@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的浪漫纪念册</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 装饰背景元素 -->
+    <div class="decorative-bg">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- 页面头部 -->
+    <header>
+        <h1>我们的<span class="pink-text">浪漫</span><span class="blue-text">纪念册</span></h1>
+        <div class="initials">F+W</div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main>
+        <!-- 时光相册模块 -->
+        <section id="photo-gallery" class="module">
+            <div class="module-header">
+                <h2>时光相册</h2>
+                <p>记录我们的美好瞬间</p>
+            </div>
+            <div class="gallery-container">
+                <div class="photo-slider">
+                    <div class="slider-wrapper">
+                        <!-- 照片将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-photo"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-photo"><i class="fas fa-chevron-right"></i></button>
+                    <button id="pause-slider"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 情诗盲盒模块 -->
+        <section id="poetry-box" class="module">
+            <div class="module-header">
+                <h2>情诗盲盒</h2>
+                <p>拆开属于我们的诗意瞬间</p>
+            </div>
+            <div class="poetry-container">
+                <div class="poetry-search">
+                    <input type="text" id="poetry-search-input" placeholder="搜索关键词（如：海、爱、你）">
+                    <button id="search-button">搜索</button>
+                </div>
+                <div class="poem-display">
+                    <h3 id="poem-title"></h3>
+                    <div id="poem-content"></div>
+                </div>
+                <button id="random-poem" class="random-button">抽取一首情诗</button>
+            </div>
+        </section>
+
+        <!-- 专属音乐盒模块 -->
+        <section id="music-box" class="module">
+            <div class="module-header">
+                <h2>专属音乐盒</h2>
+                <p>我们的爱情主题曲</p>
+            </div>
+            <div class="music-container">
+        <div class="music-player">
+            <!-- 音乐播放器将通过JavaScript动态加载 -->
+        </div>
+    </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <p>我们的爱情故事 <span class="initials">F+W</span> • 永不枯竭</p>
+        </div>
+    </footer>
+
+    <!-- 图片查看器模态框 -->
+    <div id="image-viewer" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" src="" alt="放大图片">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
